@@ -6,7 +6,7 @@ It provides a lightweight in-game menu containing player, weapon, world, spawnin
 
 ## 🎥 Showcase Video
 
-[![Simple Trainer v0.1 Showcase](https://img.youtube.com/vi/ID_DE_TA_VIDEO/maxresdefault.jpg)](TON_LIEN_YOUTUBE)
+[![Simple Trainer v0.1 Showcase](https://img.youtube.com/vi/ID_DE_TA_VIDEO/maxresdefault.jpg)](https://youtu.be/O5cDiwjx71o)
 
 ## Features
 
