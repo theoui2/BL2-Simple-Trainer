@@ -4,6 +4,10 @@
 
 It provides a lightweight in-game menu containing player, weapon, world, spawning, ESP and aim-assistance tools while keeping the interface highly customizable.
 
+## 🎥 Showcase Video
+
+[![Simple Trainer v0.1 Showcase](https://img.youtube.com/vi/ID_DE_TA_VIDEO/maxresdefault.jpg)](TON_LIEN_YOUTUBE)
+
 ## Features
 
 ### Aimbot
