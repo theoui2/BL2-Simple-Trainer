@@ -1,58 +1,119 @@
 # Simple Trainer for Borderlands 2
 
-**Simple Trainer v0.3** is a feature-rich PythonSDK utility/trainer mod for Borderlands 2.
+**Simple Trainer v0.4** is a feature-rich PythonSDK utility/trainer mod for Borderlands 2.
 
-It provides a lightweight in-game menu containing player, weapon, world, spawning, ESP, aim-assistance and advanced gear editing tools while keeping the interface highly customizable and optimized.
+It provides a lightweight in-game menu containing player, weapon, world, spawning, ESP, aim-assistance, and advanced equipment editing tools, while keeping the interface highly customizable and optimized.
 
-Version **0.3 introduces WEAPARTS**, a complete in-game equipment editor allowing weapons and gear to be modified directly from the trainer.
+Version **0.4 introduces the new Enemy Spawner and Custom Theme system**, allowing players to spawn enemies from the base game and DLC expansions, and fully customize the trainer's interface.
+
+The **WEAPARTS equipment editor**, introduced in v0.3, remains available alongside all existing trainer features.
 
 ## 🎥 Showcase Video
 
-[![Simple Trainer v0.3](https://img.youtube.com/vi/dKImdzCTkwI/maxresdefault.jpg)](https://youtu.be/dKImdzCTkwI)
+[![Simple Trainer v0.4](https://img.youtube.com/vi/eE0sC5Pn3h0/maxresdefault.jpg)](https://www.youtube.com/watch?v=eE0sC5Pn3h0)
 
-## What's New in v0.3
+**[▶ Watch Simple Trainer v0.4 Showcase](https://www.youtube.com/watch?v=eE0sC5Pn3h0)**
 
-### WEAPARTS
+---
 
-- Advanced in-game weapon and equipment editor
-- Browse and edit items directly from:
-  - Inventory
-  - Bank
-  - Claptrap Stash
-- Supports:
-  - Weapons
-  - Shields
-  - Grenade Mods
-  - Class Mods
-  - Relics
-  - Other compatible inventory items
-- Edit individual weapon and item parts
-- Create new equipment from available inventory balances
-- Real-time stat comparison before applying modifications
-- Positive stat changes are displayed in green
-- Negative stat changes are displayed in red
-- Item level editing from Level 1 to Level 80
-- Full OP gear support from OP1 to OP10
-- Proper handling of equipped weapons when replacing modified items
-- Automatic inventory refresh when opening WEAPARTS
-- Bank and Stash support with persistent item modifications
+## What's New in v0.4
 
-### Loot Level Control
+### 👾 Enemy Spawner
 
-- Manual loot level selection
-- Generate equipment from Level 1 to Level 80
-- OP1 to OP10 loot generation
-- Automatic mode based on the current game state
-- Generated loot keeps the requested item level instead of inheriting the current playthrough level
+A new enemy spawning system has been integrated directly into Simple Trainer.
+
+Spawn enemies from different areas of Borderlands 2 without needing to travel to their original locations.
+
+**Features:**
+
+- Spawn enemies directly in-game
+- Supports the base game and DLC expansions
+- Enemies organized by game area and DLC
+- Browse enemies by category:
+  - Hyperion / Robots
+  - Bandits / Humans
+  - Monsters / Creatures
+  - Other Enemies
+  - Mini-Bosses / Unique Enemies
+  - Bosses
+- Spawn enemies from different areas of the game
+- Automatic ground placement
+- Enemy levels automatically adapt to your character
+- Hostile enemy filtering to avoid spawning friendly NPCs
+- Progressive enemy discovery and caching
+- Optimized loading and map transition protection
+
+**Supported content includes:**
+
+- Borderlands 2 Base Game
+- Captain Scarlett and Her Pirate's Booty
+- Mr. Torgue's Campaign of Carnage
+- Sir Hammerlock's Big Game Hunt
+- Tiny Tina's Assault on Dragon Keep
+- Headhunter DLCs
+- Digistruct Peak
+- Commander Lilith & the Fight for Sanctuary
+
+**Note:** Enemy availability depends on accessible game definitions. Some scripted bosses and special enemies are not currently supported.
+
+The Enemy Spawner will continue to expand in future updates.
+
+### 🎨 Custom Theme
+
+Version 0.4 introduces a fully customizable interface theme.
+
+Create your own color scheme directly inside the trainer.
+
+**Features:**
+
+- New **Custom** theme
+- Customize **8 interface elements** independently
+- Change:
+  - Trainer title color
+  - Header background
+  - Main panel background
+  - Borders
+  - Normal text
+  - Active options
+  - Selection highlight
+  - Selected text
+- Choose from predefined color presets
+- Fine-tune colors using **RGBA values (0–255)**
+- Adjust interface transparency
+- Real-time preview of changes
+- Copy an existing theme as a starting point
+- Reset the Custom theme to default settings
+- Automatic saving of customization settings
+
+All existing themes remain available.
+
+### 🌍 International Localization
+
+- Improved **English, French, and Spanish** localization
+- Expanded menu and settings translations
+- Localized Enemy Spawner categories
+- Enemy names displayed in the game's language when available
+- Weapon and equipment names use localized game data when available
+- Improved consistency across trainer menus
+
+### 🎯 HUD Customization
+
+- New optional shadow effect for the Crosshair
+- New optional shadow effect for the Hitmarker
+- Independent shadow settings
+- Improved visibility against bright backgrounds
+- Additional visual customization options
+
+---
 
 ## Features
 
 ### Aimbot
 
-- Custom, Legit, Semi-Rage and Unfair profiles
+- Custom, Legit, Semi-Rage, and Unfair profiles
 - Fully customizable profiles
 - Best Bone targeting using actual skeletal mesh bones
-- Intelligent head, neck and upper torso targeting
+- Intelligent head, neck, and upper torso targeting
 - Resolution and camera-aware FOV
 - FOV 0 = unrestricted 360° targeting
 - Target priority options
@@ -65,14 +126,14 @@ Version **0.3 introduces WEAPARTS**, a complete in-game equipment editor allowin
 ### ESP
 
 - Enemy ESP
-- Names, distance and health information
+- Names, distance, and health information
 - 2D / 3D Boxes
 - Skeleton / Bones ESP
 - Snaplines
 - Visibility-based display options
 - Configurable ESP refresh rate
 - Optimized cached rendering
-- Cached enemy, visibility and bone processing
+- Cached enemy, visibility, and bone processing
 - Designed to reduce unnecessary performance overhead
 
 ### Player Tools
@@ -98,24 +159,39 @@ Version **0.3 introduces WEAPARTS**, a complete in-game equipment editor allowin
 
 ### Inventory & Gear Tools
 
-- WEAPARTS equipment editor
+- Advanced **WEAPARTS** equipment editor
+- Browse and modify equipment directly in-game
 - Inventory editing
 - Bank editing
 - Claptrap Stash editing
-- Weapon and item part modification
-- Gear level editing
-- OP1–OP10 gear support
-- Gear creation from available balances
-- Stat comparison before applying modifications
+- Supports:
+  - Weapons
+  - Shields
+  - Grenade Mods
+  - Class Mods
+  - Relics
+  - Other compatible inventory items
+- Individual weapon and equipment part modification
+- Gear creation from available item balances
+- Real-time stat comparison
+- Positive stat changes displayed in **green**
+- Negative stat changes displayed in **red**
+- Equipment level editing from **Level 1 to Level 80**
+- Full **OP1–OP10** gear support
+- Automatic inventory refresh
+- Persistent Bank and Stash modifications
 
 ### Spawn & World Tools
 
+- **New Enemy Spawner**
+- Enemy and boss spawning
+- Base game and DLC enemy support
+- Enemy classification by type and DLC
 - Weapon and item spawning
 - Loot shower
 - Manual loot Level / OP selection
 - Drop Always by rarity
 - Shooting Object mode
-- Enemy and boss spawning
 - Container / chest spawning
 - Vehicle spawning through Catch-A-Ride
 - Vehicle teleport
@@ -124,23 +200,40 @@ Version **0.3 introduces WEAPARTS**, a complete in-game equipment editor allowin
 
 ### User Interface
 
-- UltraLite custom UI
-- 36 themes
+- Lightweight **UltraLite** custom UI
+- **36 built-in themes + Custom Theme**
+- Full RGBA theme customization
 - Adjustable interface appearance
-- Configurable fonts
 - Configurable keybinds with direct key capture
 - Keyboard and controller navigation
 - Lightweight in-game HUD
-- English, French and Spanish interface support
+- Customizable Crosshair and Hitmarker
+- Optional Crosshair and Hitmarker shadows
+- English, French, and Spanish interface support
+- Persistent customization settings
 - Modular architecture for easier maintenance
 
-## WEAPARTS Notes
+---
 
-When editing the weapon currently in your hands, the game may automatically switch to another equipped weapon.
+## Important Notes
 
-This is normal — simply switch back to the modified weapon afterward.
+### WEAPARTS
 
-The inventory refreshes automatically when you open the WEAPARTS menu.
+When editing the weapon currently in your hands, Borderlands 2 may automatically switch to another equipped weapon.
+
+**This is normal — simply switch back to the modified weapon afterward.**
+
+The inventory refreshes automatically when opening the WEAPARTS menu.
+
+### Enemy Spawner
+
+The Enemy Spawner uses available Unreal Engine 3 enemy definitions and population factories.
+
+Some enemies, especially scripted bosses or mission-specific encounters, may not be available.
+
+Enemies can be spawned outside their original game areas, but certain special behaviors may still depend on their intended locations.
+
+---
 
 ## Controls
 
@@ -148,11 +241,11 @@ The inventory refreshes automatically when you open the WEAPARTS menu.
 
 | Key | Action |
 | --- | --- |
-| `F4` | Open / close Simple Trainer |
-| `Arrow Up` | Up |
-| `Arrow Down` | Down |
-| `Arrow Left` | Previous / Left |
-| `Arrow Right` | Next / Right |
+| `F4` | Open / Close Simple Trainer |
+| `Arrow Up` | Navigate Up |
+| `Arrow Down` | Navigate Down |
+| `Arrow Left` | Previous / Decrease |
+| `Arrow Right` | Next / Increase |
 | `Enter` | Select / Confirm |
 | `Backspace` | Back |
 
@@ -160,29 +253,32 @@ The inventory refreshes automatically when you open the WEAPARTS menu.
 
 | Button | Action |
 | --- | --- |
-| `RB + X` | Open / close Simple Trainer |
+| `RB + X` | Open / Close Simple Trainer |
 | `D-Pad Up / Down` | Navigate |
-| `D-Pad Left / Right` | Change values |
+| `D-Pad Left / Right` | Change Values |
 | `A` | Select / Confirm |
 | `B` | Back |
+
+---
 
 ## Installation
 
 ### Requirements
 
-- Borderlands 2
-- PythonSDK / compatible Willow2 Mod Manager installation
+- Borderlands 2 (PC)
+- PythonSDK / Compatible Willow2 Mod Manager installation
 
 ### Manual Installation
 
-0. Install Willow2 Mod Manager:
-   https://github.com/bl-sdk/willow2-mod-manager
+**1. Install Willow2 Mod Manager:**
 
-1. Download the latest Simple Trainer release.
+https://github.com/bl-sdk/willow2-mod-manager
 
-2. Extract the `SimpleTrainer` folder.
+**2. Download the latest Simple Trainer release.**
 
-3. Copy it into:
+**3. Extract the `SimpleTrainer` folder.**
+
+**4. Copy it into:**
 
 `Borderlands 2/sdk_mods/`
 
@@ -195,13 +291,38 @@ Borderlands 2/
         ├── __init__.py
         ├── player.py
         ├── spawner.py
+        ├── enemy_spawner.py
         ├── visuals.py
+        ├── combat_hud.py
         └── weaparts.py
+```
 
-4. Launch Borderlands 2.
-5. Enable Simple Trainer from Willow2 Mod Manager.
-6. Press F4 in-game to open the trainer.
-Current Version
-Simple Trainer v0.3
-Author: Theoui
-This project is still evolving. Some features may receive further improvements or optimization in future releases.
+**5. Launch Borderlands 2.**
+
+**6. Enable Simple Trainer from Willow2 Mod Manager.**
+
+**7. Press F4 in-game to open the trainer.**
+
+If you're updating from an older version, back up your settings and replace the old SimpleTrainer folder with the new release.
+
+---
+
+## Current Version
+
+**Simple Trainer v0.4**
+
+**Developer: Theoui**
+
+**Platform:** Borderlands 2 PC
+
+**Framework:** PythonSDK / AoDK Willow2 Mod Manager
+
+### Development Status
+
+Simple Trainer is an ongoing project.
+
+New features, additional enemy support, performance improvements, and interface enhancements may be introduced in future releases.
+
+Some features may still have limitations depending on the game area, installed DLCs, or system configuration.
+
+**Thank you for using Simple Trainer!**
